@@ -1,0 +1,22 @@
+services:
+  sentiment-worker:
+    build: .
+    image: "docker.io/confidential/sentiment-analysis-worker"
+    platform: linux/amd64
+    volumes:
+      - model-cache:/tmp/transformers_cache # Persistent model storage
+      - hf-cache:/tmp/huggingface_cache # Hugging Face cache
+      - /run/rofl-appd.sock:/run/rofl-appd.sock # ROFL appd REST API
+    environment:
+      - CONTRACT_ADDRESS=${CONTRACT_ADDRESS}
+      - SAPPHIRE_RPC_URL=${SAPPHIRE_RPC_URL}
+      - WORKER_PRIVATE_KEY=${WORKER_PRIVATE_KEY}
+      - ROFL_APP_ID=${ROFL_APP_ID}
+      - HUGGINGFACE_TOKEN=${HUGGINGFACE_TOKEN}
+      - PYTHONUNBUFFERED=1
+      - TRANSFORMERS_CACHE=/tmp/transformers_cache
+      - HF_HOME=/tmp/huggingface_cache
+
+volumes:
+  model-cache:
+  hf-cache:
