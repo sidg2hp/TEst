@@ -1,0 +1,97 @@
+# Docker Compose for Confidential AI Agent Marketplace Development
+version: "3.8"
+
+services:
+  # Frontend development server
+  frontend:
+    build:
+      context: .
+      dockerfile: Dockerfile.frontend
+    ports:
+      - "5173:5173"
+    volumes:
+      - ./src:/app/src
+      - ./public:/app/public
+      - ./.env:/app/.env
+    environment:
+      - NODE_ENV=development
+    depends_on:
+      - hardhat
+    networks:
+      - marketplace-network
+
+  # Hardhat development node (for local testing)
+  hardhat:
+    build:
+      context: .
+      dockerfile: Dockerfile.hardhat
+    ports:
+      - "8545:8545"
+    volumes:
+      - ./contracts:/app/contracts
+      - ./scripts:/app/scripts
+      - ./hardhat.config.cjs:/app/hardhat.config.cjs
+      - ./.env:/app/.env
+    command: npx hardhat node --hostname 0.0.0.0
+    networks:
+      - marketplace-network
+
+  # ROFL Worker (development simulation)
+  rofl-worker:
+    build:
+      context: ./rofl-worker
+      dockerfile: Dockerfile
+    volumes:
+      - ./rofl-worker/src:/app/src
+      - ./rofl-worker/contract_abi.json:/app/contract_abi.json
+      - ./.env:/app/.env
+    environment:
+      - CONTRACT_ADDRESS=${CONTRACT_ADDRESS}
+      - SAPPHIRE_RPC_URL=${VITE_SAPPHIRE_RPC_URL}
+      - WORKER_PRIVATE_KEY=${WORKER_PRIVATE_KEY}
+      - ROFL_APP_ID=${ROFL_APP_ID}
+      - HUGGINGFACE_TOKEN=${HUGGINGFACE_TOKEN}
+    depends_on:
+      - hardhat
+    networks:
+      - marketplace-network
+    restart: unless-stopped
+
+  # Database for development (optional)
+  postgres:
+    image: postgres:15-alpine
+    environment:
+      POSTGRES_DB: marketplace
+      POSTGRES_USER: developer
+      POSTGRES_PASSWORD: devpassword
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    networks:
+      - marketplace-network
+
+  # Redis for caching (optional)
+  redis:
+    image: redis:7-alpine
+    ports:
+      - "6379:6379"
+    networks:
+      - marketplace-network
+
+  # Monitoring with Prometheus (optional)
+  prometheus:
+    image: prom/prometheus:latest
+    ports:
+      - "9090:9090"
+    volumes:
+      - ./monitoring/prometheus.yml:/etc/prometheus/prometheus.yml
+    networks:
+      - marketplace-network
+
+volumes:
+  postgres_data:
+
+networks:
+  marketplace-network:
+    driver: bridge

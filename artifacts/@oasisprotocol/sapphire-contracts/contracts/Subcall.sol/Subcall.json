@@ -1,0 +1,170 @@
+{
+  "_format": "hh-sol-artifact-1",
+  "contractName": "Subcall",
+  "sourceName": "@oasisprotocol/sapphire-contracts/contracts/Subcall.sol",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "uint64",
+          "name": "status",
+          "type": "uint64"
+        },
+        {
+          "internalType": "string",
+          "name": "data",
+          "type": "string"
+        }
+      ],
+      "name": "AccountsTransferError",
+      "type": "error"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint64",
+          "name": "status",
+          "type": "uint64"
+        },
+        {
+          "internalType": "string",
+          "name": "data",
+          "type": "string"
+        }
+      ],
+      "name": "ConsensusDelegateError",
+      "type": "error"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint64",
+          "name": "status",
+          "type": "uint64"
+        },
+        {
+          "internalType": "string",
+          "name": "data",
+          "type": "string"
+        }
+      ],
+      "name": "ConsensusTakeReceiptError",
+      "type": "error"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint64",
+          "name": "status",
+          "type": "uint64"
+        },
+        {
+          "internalType": "string",
+          "name": "data",
+          "type": "string"
+        }
+      ],
+      "name": "ConsensusUndelegateError",
+      "type": "error"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint64",
+          "name": "status",
+          "type": "uint64"
+        },
+        {
+          "internalType": "string",
+          "name": "data",
+          "type": "string"
+        }
+      ],
+      "name": "ConsensusWithdrawError",
+      "type": "error"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint64",
+          "name": "",
+          "type": "uint64"
+        }
+      ],
+      "name": "CoreCallDataPublicKeyError",
+      "type": "error"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint64",
+          "name": "",
+          "type": "uint64"
+        }
+      ],
+      "name": "CoreCurrentEpochError",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "IncompleteParse",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "InvalidReceiptId",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "MissingKey",
+      "type": "error"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint64",
+          "name": "receiptId",
+          "type": "uint64"
+        }
+      ],
+      "name": "ParseReceiptError",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "RoflOriginNotAuthorizedForApp",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "SubcallError",
+      "type": "error"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "receiptKind",
+          "type": "uint256"
+        }
+      ],
+      "name": "TakeReceiptKindOutOfRange",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "TokenNameTooLong",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "WrongMapSizeError",
+      "type": "error"
+    }
+  ],
+  "bytecode": "0x60808060405234601757603a9081601d823930815050f35b600080fdfe600080fdfea264697066735822122086479b65712edb184426ce08fc2c05c09e54c2d9bbf6325449e6a923476ae80a64736f6c63430008130033",
+  "deployedBytecode": "0x600080fdfea264697066735822122086479b65712edb184426ce08fc2c05c09e54c2d9bbf6325449e6a923476ae80a64736f6c63430008130033",
+  "linkReferences": {},
+  "deployedLinkReferences": {}
+}

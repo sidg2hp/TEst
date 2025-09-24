@@ -1,0 +1,10 @@
+{
+  "_format": "hh-sol-artifact-1",
+  "contractName": "Sapphire",
+  "sourceName": "@oasisprotocol/sapphire-contracts/contracts/Sapphire.sol",
+  "abi": [],
+  "bytecode": "0x60808060405234601757603a9081601d823930815050f35b600080fdfe600080fdfea2646970667358221220c265d6c136e62ec6632be84f50884eff10352927be0a5b61839e02c7b05fa47d64736f6c63430008130033",
+  "deployedBytecode": "0x600080fdfea2646970667358221220c265d6c136e62ec6632be84f50884eff10352927be0a5b61839e02c7b05fa47d64736f6c63430008130033",
+  "linkReferences": {},
+  "deployedLinkReferences": {}
+}

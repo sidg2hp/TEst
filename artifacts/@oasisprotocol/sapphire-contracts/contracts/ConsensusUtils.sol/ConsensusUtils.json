@@ -1,0 +1,10 @@
+{
+  "_format": "hh-sol-artifact-1",
+  "contractName": "ConsensusUtils",
+  "sourceName": "@oasisprotocol/sapphire-contracts/contracts/ConsensusUtils.sol",
+  "abi": [],
+  "bytecode": "0x60808060405234601757603a9081601d823930815050f35b600080fdfe600080fdfea26469706673582212205b2d4b5d5993e22193a20d7668f21ed39af21e6e13263fdbcf5dd2dbd41137cc64736f6c63430008130033",
+  "deployedBytecode": "0x600080fdfea26469706673582212205b2d4b5d5993e22193a20d7668f21ed39af21e6e13263fdbcf5dd2dbd41137cc64736f6c63430008130033",
+  "linkReferences": {},
+  "deployedLinkReferences": {}
+}

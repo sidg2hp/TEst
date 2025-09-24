@@ -1,0 +1,191 @@
+{
+  "_format": "hh-sol-cache-2",
+  "files": {
+    "C:\\Users\\HP\\Downloads\\AI_marketplace\\project\\contracts\\ConfidentialSentimentAnalysis.sol": {
+      "lastModificationDate": 1758717383281,
+      "contentHash": "ee39cc846662348b4771f5d546831715",
+      "sourceName": "contracts/ConfidentialSentimentAnalysis.sol",
+      "solcConfig": {
+        "version": "0.8.19",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "viaIR": true,
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@oasisprotocol/sapphire-contracts/contracts/Sapphire.sol",
+        "@oasisprotocol/sapphire-contracts/contracts/Subcall.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.19"
+      ],
+      "artifacts": [
+        "ConfidentialSentimentAnalysis"
+      ]
+    },
+    "C:\\Users\\HP\\Downloads\\AI_marketplace\\project\\node_modules\\@oasisprotocol\\sapphire-contracts\\contracts\\Sapphire.sol": {
+      "lastModificationDate": 1758717048677,
+      "contentHash": "d7a6ae1e9380dc91b542c2ea616b99bf",
+      "sourceName": "@oasisprotocol/sapphire-contracts/contracts/Sapphire.sol",
+      "solcConfig": {
+        "version": "0.8.19",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "viaIR": true,
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "Sapphire"
+      ]
+    },
+    "C:\\Users\\HP\\Downloads\\AI_marketplace\\project\\node_modules\\@oasisprotocol\\sapphire-contracts\\contracts\\Subcall.sol": {
+      "lastModificationDate": 1758717048792,
+      "contentHash": "6b26714c1136544a1c300c5d1186b6d0",
+      "sourceName": "@oasisprotocol/sapphire-contracts/contracts/Subcall.sol",
+      "solcConfig": {
+        "version": "0.8.19",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "viaIR": true,
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./ConsensusUtils.sol",
+        "./CBOR.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "Subcall"
+      ]
+    },
+    "C:\\Users\\HP\\Downloads\\AI_marketplace\\project\\node_modules\\@oasisprotocol\\sapphire-contracts\\contracts\\ConsensusUtils.sol": {
+      "lastModificationDate": 1758717048423,
+      "contentHash": "3cc6551c21f23b0bd9a78857322b8117",
+      "sourceName": "@oasisprotocol/sapphire-contracts/contracts/ConsensusUtils.sol",
+      "solcConfig": {
+        "version": "0.8.19",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "viaIR": true,
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./Sapphire.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ConsensusUtils"
+      ]
+    },
+    "C:\\Users\\HP\\Downloads\\AI_marketplace\\project\\node_modules\\@oasisprotocol\\sapphire-contracts\\contracts\\CBOR.sol": {
+      "lastModificationDate": 1758717048410,
+      "contentHash": "670ca3ceff614430ee6fae2279b09125",
+      "sourceName": "@oasisprotocol/sapphire-contracts/contracts/CBOR.sol",
+      "solcConfig": {
+        "version": "0.8.19",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "viaIR": true,
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": []
+    }
+  }
+}
